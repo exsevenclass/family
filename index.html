@@ -11,7 +11,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Times New Roman',Sans-Serif;
+  font-family:'Times New Roman','Sans-Serif';
   
 }
 body{
@@ -62,7 +62,7 @@ p{font-size:15px;line-height:1.6;min-height:80px;}
 /* POLAROID STYLE */
 .memories img{
   width:100%;
-  height:290px;
+  height:280px;
   object-fit:cover;
   border-radius:10px;
   padding:10px 10px 30px 10px;
@@ -76,6 +76,7 @@ p{font-size:15px;line-height:1.6;min-height:80px;}
 .memories img:hover{
   transform: scale(1.05) rotate(0deg);
 }
+
 .absen-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -177,8 +178,6 @@ button{
 }
 
 
-
-
 .slideshow img.active{
   opacity:1;
 }
@@ -246,6 +245,16 @@ button{
 
   color:white;
   font-weight:bold;
+}
+
+.gallery-title{
+  text-align:center;
+  color:white;
+  font-size:80px;
+  margin-bottom:7300px;
+  min-height:auto;
+  font-family: 'Times New Roman', 'Sans-Serif';
+  margin-top: 15px;
 }
 
 </style>
@@ -493,15 +502,20 @@ button{
 <!-- PAGE 4 -->
 
 <div class="page" id="page4">
-  <div class="memories" 
-  <p> Every picture has a story ✨ </p>
-    <img src="IMG-20250731-WA0050.jpg"class="active">
+  <div class="gallery-title"></div>
+  <h1>Every picture Has a Story ✨ </h1>
+  <div class="memories" >
+    <img src="IMG-20260605-WA0081(2).jpg"class="active">
+    <img src="IMG-20260605-WA0084(2).jpg">
+    <img src="IMG-20260612-WA0098.jpg">
+    <img src="IMG-20260605-WA0075(2).jpg">
+    <img src="IMG-20250731-WA0049.jpg" >
+    <img src="IMG-20250731-WA0050.jpg">
     <img src="IMG-20251111-WA0069(1).jpg">
     <img src="IMG-20251111-WA0070(1).jpg">
     <img src="IMG-20251111-WA0073(1).jpg">
     <img src="IMG-20260612-WA0091.jpg">
     <img src="IMG-20260612-WA0097.jpg">
-    <img src="IMG-20260612-WA0098.jpg">
     <img src="IMG-20260612-WA0102.jpg">
     <img src="IMG-20260612-WA0103.jpg">
     <img src="IMG-20260612-WA0108.jpg">
@@ -548,9 +562,6 @@ button{
     <img src="motion_photo_6613542461896165786.jpg">
     <img src="motion_photo_6719288284025650667.jpg">
     <img src="motion_photo_9121202011041756303.jpg">
-    <img src="IMG-20260605-WA0084(2).jpg">
-    <img src="IMG-20260605-WA0081(2).jpg">
-    <img src="IMG-20260605-WA0075(2).jpg">
     <img src="motion_photo_8896960598922332645.jpg">
   </div>
 
@@ -566,7 +577,7 @@ button{
    <h2>Terima Kasih 🤍✨</h2>
   <p>
     Sekarang, kita sudah sampai di titik ini… titik di mana kita harus belajar merelakan dengan hati yang penuh kenangan. Bukan karena tidak ingin bersama lagi, tapi karena setiap perjalanan punya waktunya sendiri untuk selesai. Dan kalau pun nanti kita berjalan di arah yang berbeda, aku harap kalian selalu bahagia, selalu dikelilingi hal-hal baik, dan selalu menemukan orang-orang yang bisa membuat kalian tersenyum. 
-    Terima kasih untuk 1 tahun yang begitu berarti.Untuk semua cerita, semua rasa, dan semua “kita” yang pernah ada. Kalau suatu hari nanti kita hanya jadi kenangan, semoga kenangan itu tetap hangat setiap kali diingat.
+    Terima kasih untuk 1 tahun yang begitu berarti. Untuk semua cerita, semua rasa, dan semua “kita” yang pernah ada. Kalau suatu hari nanti kita hanya jadi kenangan, semoga kenangan itu tetap hangat setiap kali diingat.
     Dan… 
     sampai jumpa lagi di versi terbaik dari hidup kita masing-masing 🫂❤️‍🩹...<br>
     See u on top! 🚀
@@ -630,7 +641,7 @@ startSlideshow("slide3")
 }
 
 /* TYPE EFFECT */
-const text = "1 tahun kita bersama bukalah waktu yang singkat. Di dalamnya ada banyak cerita yang gak selalu mudah, ada tawa yang pernah kita bagi, ada diam yang kadang gak terucap, ada luka kecil yang mungkin gak pernah kita bicarakan, dan ada harapan uang pernah kita gantungkan tinggi, serta ada kenyataan yang perlahan mengajarkan bahwa tidak semua yang kita jaga akan tetap tinggal. Tapi entah bagaimana, kita dapat bertahan sampai sejauh ini.Aku belajar banyak hal dari kalian. Tentang bagaimana mencintai tanpa harus memiliki, tentang bagaimana bertahan meski kadang tidak dipahami, dan tentang bagaimana menerima bahwa tidak semua cerita akan berakhir seperti yang kita inginkan. Ada versi dari diriku yang hanya ada saat bersama kalian, dan mungkin versi itu akan tetap tinggal sebagai bagian dari kenangan yang tidak bisa diulang.Terima kasih sudah hadir di sebagian perjalanan hidupku, menjadi alasan aku tersenyum di hari-hari yang berat, dan menjadi seseorang yang tanpa sadar mengajarkanku arti bertahan, memahami, dan menerima. Mungkin aku tidak selalu bisa menjadi orang baik, mungkin ada kata dan sikap yang sering menyakitkan, tapi percayalah, semua yang aku lakukan selalu ada kalian di dalamnya.";
+const text = "1 tahun kita bersama bukalah waktu yang singkat. Di dalamnya ada banyak cerita yang gak selalu mudah, ada tawa yang pernah kita bagi, ada diam yang kadang gak terucap, ada luka kecil yang mungkin gak pernah kita bicarakan, dan ada harapan yang pernah kita gantungkan tinggi, serta ada kenyataan yang perlahan mengajarkan bahwa tidak semua yang kita jaga akan tetap tinggal. Tapi entah bagaimana, kita dapat bertahan sampai sejauh ini. Aku belajar banyak hal dari kalian. Tentang bagaimana mencintai tanpa harus memiliki, tentang bagaimana bertahan meski kadang tidak dipahami, dan tentang bagaimana menerima bahwa tidak semua cerita akan berakhir seperti yang kita inginkan. Ada versi dari diriku yang hanya ada saat bersama kalian, dan mungkin versi itu akan tetap tinggal sebagai bagian dari kenangan yang tidak bisa diulang.Terima kasih sudah hadir di sebagian perjalanan hidupku, menjadi alasan aku tersenyum di hari-hari yang berat, dan menjadi seseorang yang tanpa sadar mengajarkanku arti bertahan, memahami, dan menerima. Mungkin aku tidak selalu bisa menjadi orang baik, mungkin ada kata dan sikap yang sering menyakitkan, tapi percayalah, semua yang aku lakukan selalu ada kalian di dalamnya.";
 
 
 let i=0;
